@@ -14,6 +14,8 @@ class Chat extends StatelessWidget {
       body: CustomScrollView(
         physics: BouncingScrollPhysics(),
         slivers: [
+          BrowseAnimation(title: 'Messages',),
+
           ChatRow(),
           ChatRow(),
           ChatRow(),
