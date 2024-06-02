@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:material_dialogs/dialogs.dart';
+import 'package:material_dialogs/widgets/buttons/icon_button.dart';
+import 'package:material_dialogs/widgets/buttons/icon_outline_button.dart';
 import 'package:musafeer_graduation_project/features/navbar/presentation/view/screens/widgets/search_select_container.dart';
 import 'package:musafeer_graduation_project/utils/constants.dart';
 import 'package:musafeer_graduation_project/utils/mainWidgets/custom_button.dart';
@@ -54,6 +58,7 @@ bool trip = true;
                 GestureDetector(
                     onTap: (){
                       trip = false;
+
                       setState(() {
 
                       });
@@ -84,7 +89,11 @@ bool trip = true;
           SliverToBoxAdapter(child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomButton(btnTitle: 'Search', btnFun: (){}),
+              CustomButton(btnTitle: 'Search', btnFun: (){
+
+
+
+              }),
             ],
           ))
 

@@ -22,8 +22,8 @@ class _MyHomePageState extends State<MyHomePages> with SingleTickerProviderState
   late TabController tabController;
   @override
   void initState() {
-    currentPage =2;
-    tabController = TabController(length: 5, vsync: this,initialIndex: 2);
+    currentPage =0;
+    tabController = TabController(length: 5, vsync: this,initialIndex: 0);
     tabController.animation!.addListener(
           () {
         final value = tabController.animation!.value.round();

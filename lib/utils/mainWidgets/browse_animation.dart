@@ -21,8 +21,19 @@ class BrowseAnimation extends StatelessWidget {
           Visibility(
               visible: hasLeadingIcon,
               child: GestureDetector(
-
-                  child:const  Icon(Icons.arrow_back_ios))),
+                    onTap: (){
+                      Navigator.pop(context);
+                    },
+                  child:Container(
+                      alignment: Alignment.center,
+                      width: 40,
+                      height: 40,
+                      padding: EdgeInsets.only(left: 8),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Constants.kTextPrimaryColor, width: 2),
+                        borderRadius:  BorderRadius.circular(20)
+                      ),
+                      child: const  Icon(Icons.arrow_back_ios)))),
           const  Spacer(flex: 4,)
         ],
       ),

@@ -14,8 +14,8 @@ class musafeerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:SecondPage() ,
-      // home:MyHomePages() ,
+      // home:SecondPage() ,
+      home:MyHomePages() ,
     );
   }
 }
